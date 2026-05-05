@@ -66,6 +66,11 @@ public class login extends javax.swing.JFrame {
         });
 
         Bcancelar.setText("Cancelar");
+        Bcancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BcancelarActionPerformed(evt);
+            }
+        });
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/black_business_user.png"))); // NOI18N
 
@@ -161,6 +166,10 @@ public class login extends javax.swing.JFrame {
         inicio.setVisible(true);
         dispose();
     }//GEN-LAST:event_BentrarActionPerformed
+
+    private void BcancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BcancelarActionPerformed
+       System.exit(0);
+    }//GEN-LAST:event_BcancelarActionPerformed
 
     /**
      * @param args the command line arguments
