@@ -27,6 +27,7 @@ public class principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuItem1 = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -35,8 +36,13 @@ public class principal extends javax.swing.JFrame {
         MenuCadastroP = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         MenuCalculadora = new javax.swing.JMenu();
-        MenuDesenvolvedor = new javax.swing.JMenu();
-        MenuAjuda = new javax.swing.JMenu();
+        menucalculadora1 = new javax.swing.JMenuItem();
+        jmenudesenv = new javax.swing.JMenu();
+        MenuDesenvolvedor = new javax.swing.JMenuItem();
+        jmenuajuda = new javax.swing.JMenu();
+        MenuAjuda = new javax.swing.JMenuItem();
+
+        jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -88,7 +94,23 @@ public class principal extends javax.swing.JFrame {
                 MenuCalculadoraActionPerformed(evt);
             }
         });
+
+        menucalculadora1.setText("Calculadora");
+        menucalculadora1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menucalculadora1ActionPerformed(evt);
+            }
+        });
+        MenuCalculadora.add(menucalculadora1);
+
         jMenuBar1.add(MenuCalculadora);
+
+        jmenudesenv.setText("Desenvolvedor");
+        jmenudesenv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmenudesenvActionPerformed(evt);
+            }
+        });
 
         MenuDesenvolvedor.setText("Desenvolvedor");
         MenuDesenvolvedor.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +118,16 @@ public class principal extends javax.swing.JFrame {
                 MenuDesenvolvedorActionPerformed(evt);
             }
         });
-        jMenuBar1.add(MenuDesenvolvedor);
+        jmenudesenv.add(MenuDesenvolvedor);
+
+        jMenuBar1.add(jmenudesenv);
+
+        jmenuajuda.setText("Ajuda");
+        jmenuajuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmenuajudaActionPerformed(evt);
+            }
+        });
 
         MenuAjuda.setText("Ajuda");
         MenuAjuda.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +135,9 @@ public class principal extends javax.swing.JFrame {
                 MenuAjudaActionPerformed(evt);
             }
         });
-        jMenuBar1.add(MenuAjuda);
+        jmenuajuda.add(MenuAjuda);
+
+        jMenuBar1.add(jmenuajuda);
 
         setJMenuBar(jMenuBar1);
 
@@ -133,24 +166,35 @@ public class principal extends javax.swing.JFrame {
     }//GEN-LAST:event_MenuCadastroFActionPerformed
 
     private void MenuCadastroPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCadastroPActionPerformed
-        CadastroProduto cadastroProduto = new CadastroProduto();
-        cadastroProduto.setVisible(true);
+        
     }//GEN-LAST:event_MenuCadastroPActionPerformed
+
+    private void jmenuajudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmenuajudaActionPerformed
+        
+    }//GEN-LAST:event_jmenuajudaActionPerformed
+
+    private void jmenudesenvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmenudesenvActionPerformed
+        
+    }//GEN-LAST:event_jmenudesenvActionPerformed
+
+    private void MenuCalculadoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCalculadoraActionPerformed
+        
+    }//GEN-LAST:event_MenuCalculadoraActionPerformed
 
     private void MenuAjudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuAjudaActionPerformed
         Ajuda ajuda = new Ajuda();
         ajuda.setVisible(true);
     }//GEN-LAST:event_MenuAjudaActionPerformed
 
+    private void menucalculadora1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menucalculadora1ActionPerformed
+       Calculadora calculadora = new Calculadora();
+       calculadora.setVisible(true);
+    }//GEN-LAST:event_menucalculadora1ActionPerformed
+
     private void MenuDesenvolvedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuDesenvolvedorActionPerformed
         Desenvolvedor desenvolvedor = new Desenvolvedor();
         desenvolvedor.setVisible(true);
     }//GEN-LAST:event_MenuDesenvolvedorActionPerformed
-
-    private void MenuCalculadoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCalculadoraActionPerformed
-        Calculadora calculadora = new Calculadora();
-        calculadora.setVisible(true);
-    }//GEN-LAST:event_MenuCalculadoraActionPerformed
 
     /**
      * @param args the command line arguments
@@ -188,15 +232,19 @@ public class principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu MenuAjuda;
+    private javax.swing.JMenuItem MenuAjuda;
     private javax.swing.JMenuItem MenuCadastroC;
     private javax.swing.JMenuItem MenuCadastroF;
     private javax.swing.JMenuItem MenuCadastroP;
     private javax.swing.JMenu MenuCalculadora;
-    private javax.swing.JMenu MenuDesenvolvedor;
+    private javax.swing.JMenuItem MenuDesenvolvedor;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenu jmenuajuda;
+    private javax.swing.JMenu jmenudesenv;
+    private javax.swing.JMenuItem menucalculadora1;
     // End of variables declaration//GEN-END:variables
 }
